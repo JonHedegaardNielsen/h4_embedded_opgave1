@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default",
+  "command": "/opt/microchip/xc8/v4.00/bin/xc8-cc -DXPRJ_default=default -D__ATmega328PB__ -c -mcpu=ATmega328PB -x c -mdfp=/home/jon/.mchp_packs/Microchip/ATmega_DFP/3.6.299/xc8 -Wl,--gc-sections -O0 -ffunction-sections -fdata-sections -fshort-enums -funsigned-char -funsigned-bitfields -Wall -gdwarf-3 -mno-const-data-in-progmem -o CMakeFiles/opgave1_default_default_XC8_compile.dir/home/jon/Projects/Programming/Embedded/opgave1/main.c.o -c /home/jon/Projects/Programming/Embedded/opgave1/main.c",
+  "file": "/home/jon/Projects/Programming/Embedded/opgave1/main.c",
+  "output": "/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/opgave1_default_default_XC8_compile.dir/home/jon/Projects/Programming/Embedded/opgave1/main.c.o"
+}
+]

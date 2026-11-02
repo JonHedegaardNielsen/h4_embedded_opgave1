@@ -1,0 +1,5 @@
+/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/opgave1_default_default_XC8_compile.dir
+/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/opgave1_default_image_2u960kMZ.dir
+/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/merge_loadable_files.dir
+/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/edit_cache.dir
+/home/jon/Projects/Programming/Embedded/opgave1/_build/opgave1/default/CMakeFiles/rebuild_cache.dir
