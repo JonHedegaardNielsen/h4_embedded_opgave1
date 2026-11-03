@@ -56,11 +56,9 @@ int main(void) {
 
   while (1) {
     char c = uart_getchar();
-    if (c >= 'a' && c <= 'z'){
-      c = c - ('a' - 'A');
-    }
-    else if (c >= 'A' && c <= 'Z'){
-      c = c + ('a' - 'A');
+    // c = c ^ 0x20;
+    if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'){
+        c ^= 0x20;
     }
     if (c) {
       uart_puts(&c);
