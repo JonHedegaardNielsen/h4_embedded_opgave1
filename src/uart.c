@@ -6,7 +6,15 @@
 #define UBRR_VALUE ((F_CPU / (16UL * BAUD)) - 1)
 #include <avr/io.h>
 #include <util/delay.h>
+#include "../include/ProjectDefines.h"
 
+static Function_Pointer_With_One_CharPointer_Parameter Callback_Function_Pointer = NULL;
+ 
+void SetupUARTFunctionCallbackPointer(Function_Pointer_With_One_CharPointer_Parameter 
+                                      Function_To_Callback)
+{
+	Callback_Function_Pointer = Function_To_Callback;
+}
 void uart_init(void) {
   UBRR0H = (uint8_t)(UBRR_VALUE >> 8);
   UBRR0L = (uint8_t)UBRR_VALUE;
