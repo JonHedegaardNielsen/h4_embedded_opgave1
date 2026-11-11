@@ -36,8 +36,7 @@ void uart_puts(const char *s) {
 
 char uart_getchar(void) {
   // interrupt når nogen skriver
-  if ((UCSR0A & (1 << RXC0))) {
-    return UDR0;
+  while (!(UCSR0A & (1 << RXC0))) {
   }
-  return 0;
+  return UDR0;
 }

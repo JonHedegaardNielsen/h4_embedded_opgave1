@@ -7,6 +7,7 @@
 ISR(TIMER1_COMPA_vect) { PORTB ^= (1 << PB0); }
 
 void setupTimer(uint32_t time) {
+  DDRB |= (1 << PB0);
   // CTC mode
   TCCR1B |= (1 << WGM12);
   // 16MHz / 1024 prescaler

@@ -10,18 +10,14 @@
 #include "include/timer.h"
 
 int main(void) {
-  DDRB |= (1 << PB0);
   setupTimer(15624);
-  uart1_init();
+  uart_init();
 
   while (1) {
     char c = uart_getchar();
-    // c = c ^ 0x20;
     if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z'){
         c ^= 0x20;
     }
-    if (c) {
-      uart_puts(&c);
-    }
+    uart_putchar(c);
   }
 }
